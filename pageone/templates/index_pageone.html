@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/pageone.css' %}" />
+{% endblock css %}
 
 {% block main_content %}
-    <h1 style="color: red">Extended Hello World!</h1>
+    <h1 class="test">Extended Hello World!</h1>
 {% endblock main_content %}

@@ -20,7 +20,7 @@ from . import views
 
 
 urlpatterns = [
-    url(r'^/?$', views.index),
+    url(r'^$', views.index),
     url(r'pageone/?', include('pageone.urls')),
     path('admin/', admin.site.urls),
 ]
